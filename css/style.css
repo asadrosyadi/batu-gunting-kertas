@@ -1,0 +1,104 @@
+body {
+	background: black;
+	font-family: mononokiRegular;
+}
+h1, h3, a {
+	color: white;
+	transition: .333s ease all;
+}
+h3 {
+	text-align: right;
+}
+h4 {
+	color: red;
+	margin: 1.2vh auto;
+}
+h5 {
+	margin-bottom: 0;
+}
+img {
+	width: 100%;
+	height: auto;
+	max-width: 15vw;
+}
+h1:hover, h3:hover, a:hover {
+	color: #FFDC00;
+}
+p.btn {
+	margin: 2px auto;
+}
+
+.jumbotron {
+	padding: .25rem 1rem;
+	text-align: center;
+	margin: 1.5vh 0;
+}
+.centerMe {
+	text-align: center;
+}
+.btn-hand {
+	padding: 2vh 2px;
+	margin: 1vh auto;
+	font-size: 1.25rem;
+}
+.scores {
+	font-size: 1.5rem;
+}
+.bigger-text {
+	font-size: 2.5rem;
+	margin-bottom: 1vh;
+}
+.btn-secondary:not([disabled]):not(.disabled).active, .btn-secondary:not([disabled]):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+	box-shadow: 0 0 0 0.5rem rgba(134,142,150,.5);
+}
+.btn-outline-secondary:not([disabled]), .btn-outline-secondary:hover {
+	background-color: transparent;
+	color: #868e96;
+}
+.player-two {
+	margin-bottom: 0vh;
+}
+
+#two-player, #vs-cpu, #separate-score, #shared-score  {
+	padding: 35px;	
+	margin: 10px auto;
+}
+#start-button {
+	font-size: 2.5rem;
+	letter-spacing: 1rem;
+}
+#score-text {
+	margin-bottom: 1vh;
+}
+#reset-buttons {
+	text-align: center;
+}
+#reset-buttons button {
+	margin: 2vh 1vw;
+}
+#p1-inputs p, #p2-inputs p {
+	margin-bottom: 2px;
+}
+
+@keyframes upDown {
+    0% { transform: translate(0px, -1vh) rotate(0deg); }
+    10% { transform: translate(0px, 0vh) rotate(1deg); }
+    20% { transform: translate(0px, 1vh) rotate(2deg); }
+    30% { transform: translate(0px, 2vh) rotate(3deg); }
+    40% { transform: translate(0px, 3vh) rotate(4deg); }
+    50% { transform: translate(0px, 4vh) rotate(5deg); }
+    60% { transform: translate(0px, 3vh) rotate(4deg); }
+    70% { transform: translate(0px, 2.25vh) rotate(3deg); }
+    80% { transform: translate(0px, 1.5vh) rotate(2deg); }
+    90% { transform: translate(0px, .75vh) rotate(1deg); }
+    100% { transform: translate(0px, 0vh) rotate(0deg); }
+}
+
+@media only screen and (max-width : 850px) {
+	#p1-inputs, #p2-inputs {
+		display: none;
+	}
+	.player-one, .player-two {
+		padding-bottom: 2vh;
+	}
+}
